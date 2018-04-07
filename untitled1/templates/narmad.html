@@ -1,0 +1,61 @@
+{% include 'base.html' %}
+{% block title %}REgistration{% endblock %}
+{% block body %}
+    <div class="container">
+        <style>
+    label{display:inline-block;width:100px;margin-bottom:10px;}
+  </style>
+  <script language="javascript" type="text/javascript">
+function randomnumber() {
+document.form.randomnumber.value=(Math.round(Math.random()*9999999999999999+1));
+}
+
+</script>
+      <fieldset>
+        <form method="post" action="/">
+          <h2>Student Details</h2>
+          <div class="row text-center">
+            <div class="col-md-2 logo">
+          <label>First Name</label> </div>
+          <div class="col-md-10 ">
+          <input type="text" name="Firstname" placeholder="Enter your Firstname" required></div><br /><br />
+          <div class="col-md-2 logo">
+          <label>Last Name</label></div>
+          <div class="col-md-10 ">
+          <input type="text" name="Lastname" placeholder="Enter your Lastname" required></div><br /><br>
+          <div class="col-md-2 logo ">
+          <label>Registration Number</label></div>
+          <div class="col-md-10 ">
+          <input type="text" name="Registeration Number" placeholder="Enter your Registeration Number" required></div><br /><br /><br>
+          <div class="col-md-2 logo ">
+          <label>From Date</label></div>
+          <div class="col-md-10 ">
+          <input type="date" name="From Date" placeholder="Enter your From-Date" required></div><br /><br />
+          <div class="col-md-2 logo ">
+          <label>To Date</label></div>
+          <div class="col-md-10 ">
+          <input type="date" name="To Date" placeholder="Enter your To-date" required></div><br /><br />
+          <div class="col-md-2 logo ">
+           <label>Number of Person</label></div>
+           <div class="col-md-10 ">
+          <input type="number" name="Number of Persons" placeholder="Number of Persons" required></div><br /><br /></div>
+          <h2>Persons Details</h2>
+          <h4>Enter the details of Person</h4>
+          <div class="row text-center">
+          <div class="col-md-2 logo ">
+           <label>Name of Person</label></div>
+           <div class="col-md-10 ">
+          <input type="text" name="Name" placeholder="Enter your Name" required></div><br /><br /><br />
+           <div class="col-md-2 logo ">
+           <label>Age</label></div>
+           <div class="col-md-10 ">
+          <input type="number" name="age" placeholder="Enter your Age" required></div><br /><br /><br />
+        </div>
+          <button type="submit" value="Register">Register</button>      
+          
+
+
+        </form>
+      </fieldset>
+    </div>
+{% endblock %}
