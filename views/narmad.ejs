@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register for Narmad Bhavan</title>
+  </head>
+  <script language="javascript" type="text/javascript">
+function randomnumber() {
+document.form.randomnumber.value=(Math.round(Math.random()*9999999999999999+1));
+}
+</script>
+  <body>
+    <h1>Test Sucessful!</h1>
+    <p>Welcome to SVNIT-FLash</p>
+
+    <div class="container">
+      <fieldset>
+        <form method="post" action="reg_suc.ejs">
+          <input type="text" name="Firstname" placeholder="Enter your Firstname" required>
+          <input type="text" name="Lastname" placeholder="Enter your Lastname" required>
+          <input type="text" name="Registeration Number" placeholder="Enter your Registeration Number" required>
+          <input type="date" name="From Date" placeholder="Enter your From-Date" required>
+          <input type="date" name="To Date" placeholder="Enter your To-date" required>
+          <input type="number" name="Number of Persons" placeholder="Number of Persons" required>
+          <h2>Persons Details</h2>
+          <h3>Enter the details of </h3>
+          <input type="text" name="Name" placeholder="Enter your Name" required>
+          <input type="number" name="age" placeholder="Enter your Age" required>
+          <input type="submit" value="Register">      
+          
+
+
+        </form>
+      </fieldset>
+    </div>
+
+  </body>
+</html>
