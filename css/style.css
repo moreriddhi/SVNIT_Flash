@@ -1,0 +1,19 @@
+*{
+ border: 1px solid red !important;
+
+}
+
+.cards{
+    margin-top: 150px;
+    justify-content: center;
+
+}
+.card{
+
+    margin-left: 20px;
+    margin-bottom: 20px;
+    }
+.logo{
+    max-width: 120px;
+    max-height: 120px;
+}
