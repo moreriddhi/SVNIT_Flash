@@ -1,11 +1,18 @@
 *{
- border: 1px solid red !important;
+ /*border: 1px solid red !important;
+*/
 
 }
+.sections{
 
+}
+.header{
+
+}
 .cards{
-    margin-top: 150px;
-    justify-content: center;
+    margin-left: 60px;
+    margin-right: 20px;
+
 
 }
 .card{
@@ -16,4 +23,8 @@
 .logo{
     max-width: 120px;
     max-height: 120px;
+    margin: 10px;
+}
+.carousel{margin-top: 90px;
+    margin-bottom: 30px;
 }
