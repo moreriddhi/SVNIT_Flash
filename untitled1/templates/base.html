@@ -2,59 +2,57 @@
 <html>
   <head>
       {% load static %}
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <link rel="stylesheet" href="{% static 'dotslash/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'dotslash/css/bootstrap-theme.min.css' %}">
-    <link rel="stylesheet" href="{% static 'dotslash/css/cards.css' %}">
-      <link rel="stylesheet" href="{% static 'dotslash/css/style.css' %}">
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'dotslash/css/bootstrap-theme.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'dotslash/css/style.css' %}"  >
+      <link rel="stylesheet" type="text/css" href="{% static 'dotslash/css/cards.css' %}">
+    <script type="text/javascript" src = "{% static 'dotslash/js/cards.js' %}" type="module"></script>
+    <script type="text/javascript" src = "{% static 'dotslash/js/jquery-3.2.1.js' %}" type="module"></script>
 
-
-      <script type="text/javascript" href="{% static 'dotslash/js/cards.js' %}"></script>
-      <script type="text/javascript" href="{% static 'dotslash/js/bootstrap.min.js' %}"></script>
-      <script type="text/javascript" href="{% static 'dotslash/js/jquery-3.2.1.js' %}"></script>
-    <title>{% block title %}{% endblock %}</title>
+      <title>SVNIT FLash</title>
   </head>
 <body>
-<div class="container">
+<div class="container-width">
 <div class="header navbar navbar-default navbar-fixed-top">
   <div class="row text-center">
       <div class="col-md-3 logo">
-              <img src='{% static 'dotslash/images/svnit logo.png' %}' class="img-responsive">
+              <img src="{% static 'dotslash/images/svnit logo.png' %}" class="img-responsive">
       </div>
       <div class="col-md-9 ">
               <div class="row">
-              <div class="col-md-12"> <h2> SVNIT Flash </h2>
-              </div></div>
+              <div class="col-md-11"> <center><img class="head img-responsive" src="{% static 'dotslash/images/head.png' %}" alt="FLASH" ></center>
+              </div>
+              <div class="col-md-1 svnit"><h1>SVNIT</h1> </div>
+              </div>
               <div class="row">
           <div class="col-md-2">
-               <button onclick="window.open('#sixth','_self')" role="button">
-               <a class="" href="#sixth">About Us</a>
-              </button>
+               <a class="btn btn-default buth button" href="{% url 'dotslash:home' %}" role="button">Home Page</a>
+
           </div>
           <div class="col-md-2">
-               <button onclick="window.open('#sixth','_self')" role="button">
-               <a class="" href="#">About Us</a>
-              </button>
+               <a onclick="window.open('#sixth','_self')" class="btn btn-default buth button" href="{% url 'dotslash:home' %}" role="button">Home Page</a>
+
           </div>
           <div class="col-md-2">
-               <button onclick="window.open('#sixth','_self')" role="button">
-               <a class="" href="#">About Us</a>
-              </button>
+               <a onclick="window.open('#sixth','_self')" class="btn btn-default buth button" href="{% url 'dotslash:home' %}" role="button">Home Page</a>
+
           </div>
           <div class="col-md-2">
-               <button onclick="window.open('#sixth','_self')" role="button">
-               <a class="" href="#">About Us</a>
-              </button>
+               <a onclick="window.open('#sixth','_self')" class="btn btn-default buth button" href="{% url 'dotslash:home' %}" role="button">Home Page</a>
+
           </div>
-                <div class="col-md-2">
-               <button onclick="window.open('#sixth','_self')" role="button">
-               <a class="" href="#">About Us</a>
-              </button>
+          <div class="col-md-2">
+               <a onclick="window.open('#sixth','_self')" class="btn btn-default buth button" href="{% url 'dotslash:home' %}" role="button">Home Page</a>
+
           </div>
-        </div>
         </div>
   </div>
-    {% block body %}{% endblock %}
 
-</div></div></body></html>
+  </div>
+</div>
+{% block body %}{% endblock %}
+</div></body></html>

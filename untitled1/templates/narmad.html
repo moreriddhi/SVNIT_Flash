@@ -1,18 +1,10 @@
 {% include 'base.html' %}
-{% block title %}REgistration{% endblock %}
+{% block title %}Registration{% endblock %}
 {% block body %}
     <div class="container">
-        <style>
-    label{display:inline-block;width:100px;margin-bottom:10px;}
-  </style>
-  <script language="javascript" type="text/javascript">
-function randomnumber() {
-document.form.randomnumber.value=(Math.round(Math.random()*9999999999999999+1));
-}
-
-</script>
-      <fieldset>
-        <form method="post" action="/">
+        <fieldset>
+        <form method="post" action="{% url 'dotslash:narmad' %}">
+            {% csrf_token %}
           <h2>Student Details</h2>
           <div class="row text-center">
             <div class="col-md-2 logo">
@@ -52,9 +44,6 @@ document.form.randomnumber.value=(Math.round(Math.random()*9999999999999999+1));
           <input type="number" name="age" placeholder="Enter your Age" required></div><br /><br /><br />
         </div>
           <button type="submit" value="Register">Register</button>      
-          
-
-
         </form>
       </fieldset>
     </div>

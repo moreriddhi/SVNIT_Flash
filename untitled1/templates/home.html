@@ -1,46 +1,105 @@
 {% include 'base.html' %}
+{% load static %}
 {% block title %}Home{% endblock %}
 {% block body %}
-  <div class= "cards row text-center">
+  <div class="container-width">
 
-      <div class="col-md-3 card hover">
-      <h3 align="center"> Heading </h3>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+       <img src="{% static 'dotslash/images/svnit1.PNG' %}" class="caru img-responsive" style="width:100%; height: 60%">
+      <div class="carousel-caption">
+      <h1>Campus Life Made Easier</h1>
+  </div>
+      </div>
+
+      <div class="item">
+        <img src="{% static 'dotslash/images/narmad1.PNG' %}" class="caru img-responsive" style="width:100%">
+      </div>
+
+      <div class="item">
+              <img src="{% static 'dotslash/images/canteen.jpg' %}" class="caru img-responsive" style="width:100%">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="container sections">
+  <div class= "cards text-center">
+    <div class="card hover" id ="guest_house">
+      <div class="row">
+      <div class="col-md-12">
+      <h3 align="center"> Guest House Booking </h3>
+      </div></div>
+      <div class="row">
+      <div class="col-md-4">
       <center>
-      <img src="https://placehold.it/300x200" class="img-responsive"></center>
+      <img src="{% static 'dotslash/images/narmad2.jpg' %}" class="img-responsive"></center>
       <div style="margin-left: 10px;margin-right:10px">
+      </div>
+      </div>
+      <div class="col-md-8">
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      </div>
-      </div>
-
-      <div class="col-md-3 card hover">
-      <h3 align="center"> Heading </h3>
-      <center><img src="https://placehold.it/300x200" class="img-responsive"></center>
-      <div style="margin-left: 10px;margin-right:10px">
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      </div>
-      </div>
-
-      <div class="col-md-3 card hover">
-      <h3 align="center"> Heading </h3>
       <center>
-      <img src="https://placehold.it/300x200" class="img-responsive"></center>
-      <div style="margin-left: 10px;margin-right:10px">
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <a href="{% url 'dotslash:narmad' %}" class="button_front">SEND
+      </a>
+      </center>
+
+      </div>
       </div>
       </div>
 
-      <div class="col-md-3 card hover">
-      <h3 align="center"> Heading </h3>
+<div class="row card hover" id="canteen">
+      <div class="col-md-12">
+      <h3 align="center"> Canteen Services </h3>
+      </div>
+      <div class="col-md-4">
       <center>
-      <img src="https://placehold.it/300x200" class="img-responsive"></center>
+      <img src="{% static 'dotslash/images/narmad2.jpg' %}" class="img-responsive"></center>
       <div style="margin-left: 10px;margin-right:10px">
+      </div>
+      </div>
+      <div class="col-md-8">
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
       </div>
       </div>
 
+<div class="row card hover">
+      <div class="col-md-12">
+      <h3 align="center"> Guest House Booking </h3>
+      </div>
+      <div class="col-md-4">
+      <center>
+      <img src="{% static 'dotslash/images/narmad2.jpg' %}" class="img-responsive"></center>
+      <div style="margin-left: 10px;margin-right:10px">
+      </div>
+      </div>
+      <div class="col-md-8">
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+      </div>
+
+  </div>
   </div>
 {% endblock %}
