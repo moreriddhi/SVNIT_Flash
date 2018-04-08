@@ -74,6 +74,7 @@
   </div>
   <div id="Beverages" class="tabcontent">
   <table>
+  <form method="post" action="cart.php" class="form">
    <tr>
     <th><img src="images\dosa.jpg" height="200" width="250">
 	<center>Rs. 30</center>
@@ -81,7 +82,8 @@
      <th><h2><align ="left"> DOSA </align></H2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="dosa">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -95,7 +97,8 @@
 	 <h2><align ="left"> MANCHURIAN </align></H2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="manchurian">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -113,7 +116,8 @@
 	<h2><align ="left"> NOODLES </align></h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="noodles">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -127,7 +131,8 @@
 	 <h2><align ="left"> VADA PAV </align></h2>
 	 <div class="form-group">
       <label for="sell">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="vp">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -143,7 +148,8 @@
 	<h2><align ="left"> SAMOSA </align></h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="samosa">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -157,7 +163,8 @@
 	 <h2><align ="left"> CHOLE BHATURE </align></h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="cb">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -173,7 +180,8 @@
 	<h2><align ="left"> SANDWICH </align></h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="sandwich">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -187,7 +195,8 @@
 	 <h2><align ="left"> KACHORI </align></h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="kachori">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -207,7 +216,8 @@
     <th><h2><align ="left"> PINEAPPLE JUICE </align></H2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="pj">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -223,7 +233,8 @@
 	 <h2><align ="left"> LEMON JUICE </align></H2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="lj">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -240,7 +251,8 @@
 	<h2><align ="left"> MANGO <br>JUICE</align></h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="mj">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -254,22 +266,29 @@
 	 <h2><align ="left"> APPLE JUICE </align></h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-	  <form method="post" action="cart.php" class="form">
-      <select class="form-control" name="sell" >
+	  <form method="post" action="cart.php" >
+      <select class="form-control" name="aj" >
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select></div>
-	  </form>
-	  <input type="submit" value="submit">
+	  <button type="submit" class="button">Add to cart</button></form>
+	 <!-- <input type="submit" value="submit"></form> -->
 	 <!-- <button class="button" type="submit">Add to kcart</button> -->
 	 </th>
   </tr>
   </table>
 </div>
   <center>
+<<<<<<< HEAD
   <button class="button" data-toggle="modal" data-target= "#project1" >Add to cart</button></center>
+||||||| merged common ancestors
+  <button class="button">Add to cart</button></center>
+=======
+  <button type="submit" class="button">Add to cart</button></center>
+>>>>>>> ce330df3ff7b8fee6629b61a0ee4b414b66bbc97
 
 </div>
 </div>
