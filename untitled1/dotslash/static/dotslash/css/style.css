@@ -17,8 +17,12 @@ b*/ackground-color:linear-gradient(-90deg, #ddd6f3,#faaca8);
     padding-right: 20px;
     font-size: 1.2  em;
 }
+.rashmit{
+    padding-top: 170px;
+}
 .body{
-
+    padding-top: 700px;
+    background-image: url("../images/download.jpeg");
 }
 .svnit{
     align-items: flex-end;

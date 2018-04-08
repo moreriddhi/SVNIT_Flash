@@ -1,16 +1,15 @@
 {% include 'base.html' %}
 {% block title %}Registration{% endblock %}
 {% block body %}
-    <form method="post" action="/">
-    {% csrf_token %}
-        asa
-        sa
-        s
-        a
-        s
-        as
-        a
-    {{ form.as_p }}
-    <input type="submit" value="Submit">
+    <div class="rashmit">
+    <script type="text/javascript">
+        function randomnumber() {
+        document.forms[0].randomnumber.value=(Math.round(Math.random()*9999999999999999+1));
+        }
+        onload=randomnumber
+    </script>
+    <form action="">
+        <input name="randomnumber" readonly>
     </form>
+    </div>
 {% endblock %}

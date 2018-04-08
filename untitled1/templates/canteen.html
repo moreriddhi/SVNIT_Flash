@@ -1,0 +1,232 @@
+{% load static %}
+{% include 'base.html' %}
+{% block title %}Canteen{% endblock %}
+{% block body %}
+<br><br><br><br><br><br><br><br><br><br>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+	<p align="left">SEE CART</p>
+	<p align="right">PAYMENT</p>
+
+</div>
+</div>
+<button class="tablink" onclick="openPage('Beverages', this, 'red')">BEVERAGES</button>
+<button class="tablink" onclick="openPage('Drinks', this, 'red')" >DRINKS</button>
+
+<div id="Beverages" class="tabcontent">
+  <table>
+   <tr>
+    <th><img src="{% static 'dotslash/images/dosa.jpg' %}" height="200" width="250">
+	Rs. 30
+	</th>
+     <th><h2 align ="left"> DOSA ></H2>
+	 <div class="form-group">
+      <label for="sel1">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+	 <button class="button">Add to cart</button>
+	 </th>
+	  <th><img src="{% static 'dotslash/images/manchurian.jpeg' %}" height="200" width="250">
+	Rs. 30</th>
+	 <th>
+	 <h2 align ="left"> MANCHURIAN ></H2>
+	 <div class="form-group">
+      <label for="sel1">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+	 <button class="button">Add to cart</button>
+	 </th>
+  </tr>
+  <tr>
+	<th>
+	<img src="{% static 'dotslash/images/dosa.jpg' %}" height="200" width="250">
+	Rs. 30
+	</th>
+    <th>
+	<h2 align ="left"> NOODLES ></h2>
+	 <div class="form-group">
+      <label for="sel1">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+	 <button class="button">Add to cart</button>
+	</th>
+	<th><img src="{% static 'dotslash/images/vada pav.jpg' %}" height="200" width="250">
+	Rs. 30</th>
+     <th>
+	 <h2 align ="left"> VADA PAV ></h2>
+	 <div class="form-group">
+      <label for="sell">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+	 <button class="button">Add to cart</button>
+	 </th>
+  </tr>
+  <tr>
+    <th><img src="{% static 'dotslash/images/samosa.jpg' %}" height="200" width="250">
+	Rs. 30</th>
+	<th>
+	<h2 align ="left"> SAMOSA ></h2>
+	 <div class="form-group">
+      <label for="sel1">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+	 <button class="button">Add to cart</button>
+	</th>
+	<th><img src="{% static 'dotslash/images/chole.jpg' %}" height="200" width="250">
+	Rs. 30</th>
+     <th>
+	 <h2 align ="left"> CHOLE BHATURE ></h2>
+	 <div class="form-group">
+      <label for="sel1">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+	 <button class="button">Add to cart</button>
+	 </th>
+  </tr>
+  <tr>
+    <th><img src="{% static 'dotslash/images/sandwich.jpg' %}" height="200" width="250">
+	Rs. 30</th>
+	<th>
+	<h2 align ="left"> SANDWICH ></h2>
+	 <div class="form-group">
+      <label for="sel1">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+	 <button class="button">Add to cart</button>
+	</th>
+	<th><img src="{% static 'dotslash/images/kachori.jpg' %}" height="200" width="250">
+	Rs. 30</th>
+     <th>
+	 <h2 align ="left"> KACHORI ></h2>
+	 <div class="form-group">
+      <label for="sel1">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+	 <button class="button">Add to cart</button>
+	 </th>
+  </tr>
+  </table>
+</div>
+<div id="Drinks" class="tabcontent">
+  <table>
+   <tr>
+    <th><img src="{% static 'dotslash/images/pineapple.jpg' %}" height="200" width="200">
+	Rs. 30
+	</th>
+     <th><h2 align ="left"> PINEAPPLE JUICE ></H2>
+	 <div class="form-group">
+      <label for="sel1">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+	 <button class="button">Add to cart</button>
+	 </th>
+
+	 <th><img src="{% static "dotslash/images/lemon.jpg" %}" height="200" width="200">
+	Rs. 30</th>
+	 <th>
+	 <h2 align ="left"> LEMON JUICE ></H2>
+	 <div class="form-group">
+      <label for="sel1">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+	 <button class="button">Add to cart</button>
+	 </th>
+  </tr>
+  <tr>
+	<th>
+	<img src="{% static "dotslash/images/mango.jpg" %}" height="200" width="200">
+	Rs. 30
+	</th>
+    <th>
+	<h2 align ="left"> MANGO <br>JUICE></h2>
+	 <div class="form-group">
+      <label for="sel1">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+	 <button class="button">Add to cart</button>
+	</th>
+	<th><img src="{% static 'dotslash/images/apple.jpg' %}" height="200" width="200">
+	Rs. 30</th>
+     <th>
+	 <h2 align ="left"> APPLE JUICE ></h2>
+	 <div class="form-group">
+      <label for="sel1">Quantity</label>
+	  <form method="post" action="cart.php" class="form">
+          <select class="form-control" name="sell" >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+	  </form></div>
+	  <input type="submit" value="submit">
+	 <!-- <button class="button" type="submit">Add to kcart</button> -->
+	 </th>
+  </tr>
+  </table>
+
+</div>
+ <button class="button">Add to cart</button>
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script></div>{% endblock %}
