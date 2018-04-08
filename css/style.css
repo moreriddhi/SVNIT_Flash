@@ -43,6 +43,7 @@ font-family: 'Lato', sans-serif;
 
 .svnit{
     align-items: flex-end;
+    margin-bottom: -30px;
 
 }
 .svnit h1{
@@ -94,7 +95,7 @@ margin:0;
 }
 .carousel{margin-top: 120px;
     margin-bottom: 30px;
-}
+}F
 .button_front{
   margin-top: 5%;
   /*width:25%;*/

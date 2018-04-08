@@ -26,10 +26,13 @@
               <div class="row">
               <div class="col-md-11"> <center><img class="head img-responsive" src="images/head.png" alt="FLASH" ></center>
               </div>
-              <div class="col-md-1 svnit"><h1 align="left">SVNIT</h1> </div>
               </div>
               <hr>
               <div class="row">
+
+          <div>
+            <a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt head_button" href="https://www.facebook.com" role="button" >See Cart</a>
+          </div>
           <div class="col-md-3">
                <a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt butt" href="https://www.facebook.com" role="button">Home</a>
 
@@ -44,7 +47,9 @@
           </div>
           <div class="col-md-3">
                <a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt" href="https://www.facebook.com" role="button">Students Council</a>
-
+          </div>
+          <div>
+          <a onclick="window.open('#sixth','_self')" class="head_button btn btn-default buth butt " href="https://www.facebook.com" role="button"  >Payment</a>
           </div>
         </div>
   </div>
@@ -57,14 +62,12 @@
 <div class="container-width sec1">
 <div class="row">
 <div class="col-md-12 navvy">
-  <a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt" href="https://www.facebook.com" role="button" >See Cart</a>
-<a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt " href="https://www.facebook.com" role="button"  >Payment</a>
 
 
 </div>
 </div>
 <div class="row">
-  <div class="col-md-6 ">
+  <div class="col-md-6">
   <button class="tablink" onclick="openPage('Beverages', this, '#a9bed8')">SNACKS</button></div>
   <div class="col-md-6">
   <button class="tablink" onclick="openPage('Drinks', this, '#a9bed8')" >DRINKS</button></div>
@@ -266,7 +269,7 @@
   </table>
 </div>
   <center>
-  <button class="button">Add to cart</button></center>
+  <button class="button" data-toggle="modal" data-target= "#project1" >Add to cart</button></center>
 
 </div>
 </div>
@@ -290,6 +293,30 @@ function openPage(pageName,elmnt,color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+<!-- Button trigger modal
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>-->
+
+<!-- Modal -->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" style="float:right"  data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+    </div>
+      <div class="modal-body">
+        Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in production. You can also download a sourcemap file for use when debugging with a compressed file. The map file is not required for users to run jQuery, it just improves the developer's debugger experience. As of jQuery 1.11.0/2.1.0 the //# sourceMappingURL comment is not included in the compressed file.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
