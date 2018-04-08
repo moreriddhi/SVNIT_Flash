@@ -65,7 +65,7 @@
 </div>
 <div class="row">
   <div class="col-md-6 ">
-  <button class="tablink" onclick="openPage('Beverages', this, '#a9bed8')">SNACKS</button></div>
+  <button class="tablink" onclick="openPage('Beverages', this, '#a9bed8')" >SNACKS</button></div>
   <div class="col-md-6">
   <button class="tablink" onclick="openPage('Drinks', this, '#a9bed8')" >DRINKS</button></div>
   </div>
@@ -123,7 +123,7 @@
 
 	</th>
 	<th><img src="images\vada pav.jpg" height="200" width="250">
-	<center>Rs. 30</center></th>
+	<center>Rs. 20</center></th>
      <th>
 	 <h2><align ="left"> VADA PAV </align></h2>
 	 <div class="form-group">
@@ -140,7 +140,7 @@
   </tr>
   <tr>
     <th><img src="images\samosa.jpg" height="200" width="250">
-	<center>Rs. 30</center></th>
+	<center>Rs. 40</center></th>
 	<th>
 	<h2><align ="left"> SAMOSA </align></h2>
 	 <div class="form-group">
@@ -208,7 +208,7 @@
   <table>
    <tr>
     <th><img src="images\pineapple.jpg" height="200" width="200">
-	<center>Rs. 30</center>
+	<center>Rs. 20</center>
 	</th>
     <th><h2><align ="left"> PINEAPPLE JUICE </align></H2>
 	 <div class="form-group">
@@ -242,7 +242,7 @@
   <tr>
 	<th>
 	<img src="images\mango.jpg" height="200" width="200">
-	<center>Rs. 30</center>
+	<center>Rs. 20</center>
 	</th>
     <th>
 	<h2><align ="left"> MANGO <br>JUICE</align></h2>
@@ -279,7 +279,6 @@
   </table>
 </div>
   <center>
-  <button type="submit" class="button">Add to cart</button></center>
 
 </div>
 </div>
@@ -296,7 +295,7 @@ function openPage(pageName,elmnt,color) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
     }
-    document.getElementById(pageName).style.display = "block";
+    document.getElementById(pageName).style.display = " block";
     elmnt.style.backgroundColor = color;
 
 }

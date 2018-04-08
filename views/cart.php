@@ -22,8 +22,15 @@ $con=mysqli_connect("127.0.0.1","root","")or
 		$qry = "INSERT INTO `food`(dosa,sandwich,samosa,vadapav,kachori,cholebhature,manchurian,noodles,lemonjuice,pineapplejuice,mangojuice,applejuice) VALUES($dosa,$manchurian,$noodles,$vp,$samosa,$cb,$sandwich,$kachori,$pj,$lj,$mj,$aj)";
 		if(mysqli_query($con,$qry))
 		{
-			echo "Submitted !";
-			//header("Location:background.php");
+			
+			 $result1=mysqli_query($con,"SELECT * FROM food where ");
+			
+				
+				
+			$dosars=30; $sandwichrs=30; $samosars=40; $vprs=20; $kachorirs=30; $cbrs=40; $manchurianrs=30; $noodlesrs=30; $ljrs=30; $pjrs=20; $mjrs=20; $ajrs=30;
+			$total=$dosars*$dosa + $sandwichrs*$sandwich + $manchurian*$manchurianrs + $noodles*$noodlesrs + $vp*$vprs + $samosa*$samosars + $cb*$cbrs + $kachori*$kachorirs + $pj*$pjrs + $lj*$ljrs + $mj*$mjrs + $ajrs*$aj;
+            
+			echo " $total ";
 			
 		}
 
