@@ -1,218 +1,292 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html>
+<head>
 {% load static %}
-{% extends '' %}
-{% block title %}Canteen{% endblock %}
-{% block body %}
+     <meta chaRset="</utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'dotslash/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'dotslash/css/cards.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script type="text/javascript" src = "{% static 'dotslash/js/cards.js' %}"></script>
+    <title>SVNIT FLash</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dotslash/css/canteen.css' %}">
+	</head>
+<body>
+<div class="container-width">
+<div class="header navbar navbar-default navbar-fixed-top">
+  <div class="row text-center">
+      <div class="col-md-3 logo">
+              <img src="{% static 'dotslash/images/svnit logo.png' %}" align="right" class="img-responsive">
+      </div>
+      <div class="col-md-9 ">
+              <div class="row">
+              <div class="col-md-11"> <center><img class="head img-responsive" src="{% static 'dotslash/images/head.png' %}" alt="FLASH" ></center>
+              </div>
+              <div class="col-md-1 svnit"><h1 align="left">SVNIT</h1> </div>
+              </div>
+              <hr>
+              <div class="row">
+          <div class="col-md-3">
+               <a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt butt" href="{% url 'dotslash:home' %}" role="button">Home</a>
+
+          </div>
+          <div class="col-md-3">
+               <a onclick="window.open('#guest_house','_self')" class="btn btn-default buth butt" role="button" href="{% url 'dotslash:narmad' %}">Guest House Booking</a>
+
+          </div>
+          <div class="col-md-3">
+               <a onclick="window.open('#canteen','_self')" class="btn btn-default buth butt"  role="button" href="{% url 'dotslash:canteen' %}">Canteen Service</a>
+
+          </div>
+          <div class="col-md-3">
+               <a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt" href="{% url 'dotslash:council' %}" role="button">Students Council</a>
+
+          </div>
+        </div>
+  </div>
+
+  </div>
+</div>
+</div>
+
 <br><br><br><br><br><br><br><br><br><br>
-<div class="container">
+<div class="container-width sec1">
 <div class="row">
-<div class="col-md-12">
-	<p align="left">SEE CART</p>
-	<p align="right">PAYMENT</p>
+<div class="col-md-12 navvy">
+  <a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt" href="https://www.facebook.com" role="button" >See Cart</a>
+<a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt " href="https://www.facebook.com" role="button"  >Payment</a>
+
 
 </div>
 </div>
-<button class="tablink" onclick="openPage('Beverages', this, 'red')">BEVERAGES</button>
-<button class="tablink" onclick="openPage('Drinks', this, 'red')" >DRINKS</button>
-
-<div id="Beverages" class="tabcontent">
+<div class="row">
+  <div class="col-md-6 ">
+  <button class="tablink" onclick="openPage('Beverages', this, '#a9bed8')" >SNACKS</button></div>
+  <div class="col-md-6">
+  <button class="tablink" onclick="openPage('Drinks', this, '#a9bed8')" >DRINKS</button></div>
+  </div>
+  <div id="Beverages" class="tabcontent">
+      <form method="post" action="cart.php" class="form">
   <table>
-   <tr>
-    <th><img src="{% static 'dotslash/images/dosa.jpg' %}" height="200" width="250">
-	Rs. 30
+
+     <tr>
+    <th><img src="{% static "dotslash/images/dosa.jpg"%}" height="200" width="250">
+	<center>Rs. 30</center>
 	</th>
-     <th><h2 align ="left"> DOSA ></H2>
+     <th><!--suppress SyntaxError -->
+         <h2 align ="left"> DOSA </H2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="dosa">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select></div>
-	 <button class="button">Add to cart</button>
+
 	 </th>
-	  <th><img src="{% static 'dotslash/images/manchurian.jpeg' %}" height="200" width="250">
-	Rs. 30</th>
+	  <th><img src="{% static "dotslash/images/manchurian.jpeg"%}" height="200" width="250">
+	<center>Rs. 30</center></th>
 	 <th>
-	 <h2 align ="left"> MANCHURIAN ></H2>
+	 <h2 align ="left"> MANCHURIAN</H2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="manchurian">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select></div>
-	 <button class="button">Add to cart</button>
+
 	 </th>
   </tr>
   <tr>
 	<th>
-	<img src="{% static 'dotslash/images/dosa.jpg' %}" height="200" width="250">
-	Rs. 30
+	<img src="{% static "dotslash/images/noodles.jpg"%}" height="200" width="250">
+	<center>Rs. 30</center>
 	</th>
     <th>
-	<h2 align ="left"> NOODLES ></h2>
+	<h2 align ="left"> NOODLES </h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="noodles">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select></div>
-	 <button class="button">Add to cart</button>
+
 	</th>
-	<th><img src="{% static 'dotslash/images/vada pav.jpg' %}" height="200" width="250">
-	Rs. 30</th>
+	<th><img src="{% static "dotslash/images/vada pav.jpg"%}" height="200" width="250">
+	<center>Rs. 20</center></th>
      <th>
-	 <h2 align ="left"> VADA PAV ></h2>
+	 <h2 align ="left"> VADA PAV </h2>
 	 <div class="form-group">
       <label for="sell">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="vp">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select></div>
-	 <button class="button">Add to cart</button>
+
 	 </th>
   </tr>
   <tr>
-    <th><img src="{% static 'dotslash/images/samosa.jpg' %}" height="200" width="250">
-	Rs. 30</th>
+    <th><img src="{% static "dotslash/images/samosa.jpg"%}" height="200" width="250">
+	<center>Rs. 40</center></th>
 	<th>
-	<h2 align ="left"> SAMOSA ></h2>
+	<h2 align ="left"> SAMOSA </h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="samosa">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select></div>
-	 <button class="button">Add to cart</button>
+
 	</th>
-	<th><img src="{% static 'dotslash/images/chole.jpg' %}" height="200" width="250">
-	Rs. 30</th>
+	<th><img src="{% static "dotslash/images/chole.jpg"%}" height="200" width="250">
+	<center>Rs. 30</center></th>
      <th>
-	 <h2 align ="left"> CHOLE BHATURE ></h2>
+	 <h2 align ="left"> CHOLE BHATURE </h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="cb">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select></div>
-	 <button class="button">Add to cart</button>
+
 	 </th>
   </tr>
   <tr>
-    <th><img src="{% static 'dotslash/images/sandwich.jpg' %}" height="200" width="250">
-	Rs. 30</th>
+    <th><img src="{% static "dotslash/images/sandwich.jpg"%}" height="200" width="250">
+	<center>Rs. 30</center></th>
 	<th>
-	<h2 align ="left"> SANDWICH ></h2>
+	<h2 align ="left"> SANDWICH </h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="sandwich">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select></div>
-	 <button class="button">Add to cart</button>
+
 	</th>
-	<th><img src="{% static 'dotslash/images/kachori.jpg' %}" height="200" width="250">
-	Rs. 30</th>
+	<th><img src="{% static "dotslash/images/kachori.jpg"%}" height="200" width="250">
+	<center>Rs. 30</center></th>
      <th>
-	 <h2 align ="left"> KACHORI ></h2>
+	 <h2 align ="left"> KACHORI </h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="kachori">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select></div>
-	 <button class="button">Add to cart</button>
+
 	 </th>
   </tr>
   </table>
+
 </div>
 <div id="Drinks" class="tabcontent">
   <table>
    <tr>
-    <th><img src="{% static 'dotslash/images/pineapple.jpg' %}" height="200" width="200">
-	Rs. 30
+    <th><img src="{% static "dotslash/images/pineapple.jpg"%}" height="200" width="200">
+	<center>Rs. 20</center>
 	</th>
-     <th><h2 align ="left"> PINEAPPLE JUICE ></H2>
+    <th><h2 align ="left"> PINEAPPLE JUICE </H2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="pj">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select></div>
-	 <button class="button">Add to cart</button>
+
 	 </th>
 
-	 <th><img src="{% static "dotslash/images/lemon.jpg" %}" height="200" width="200">
-	Rs. 30</th>
-	 <th>
-	 <h2 align ="left"> LEMON JUICE ></H2>
+	 <th><img src="{% static "dotslash/images/lemon.jpg"%}" height="200" width="200">
+	<center>Rs. 30</center></th>
+
+   <th>
+	 <h2 align ="left"> LEMON JUICE </H2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="lj">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
-      </select></div>
-	 <button class="button">Add to cart</button>
-	 </th>
+      </select> </div>
+    </th>
   </tr>
   <tr>
 	<th>
 	<img src="{% static "dotslash/images/mango.jpg" %}" height="200" width="200">
-	Rs. 30
+	<center>Rs. 20</center>
 	</th>
     <th>
-	<h2 align ="left"> MANGO <br>JUICE></h2>
+	<h2 align ="left"> MANGO <br>JUICE</h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" name="mj">
+		<option>0</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select></div>
-	 <button class="button">Add to cart</button>
+
 	</th>
-	<th><img src="{% static 'dotslash/images/apple.jpg' %}" height="200" width="200">
-	Rs. 30</th>
+	<th><img src="{% static "dotslash/images/apple.jpg" %}" height="200" width="200">
+	<center>Rs. 30</center></th>
      <th>
-	 <h2 align ="left"> APPLE JUICE ></h2>
+	 <h2 align ="left"> APPLE JUICE </h2>
 	 <div class="form-group">
       <label for="sel1">Quantity</label>
-	  <form method="post" action="cart.php" class="form">
-          <select class="form-control" name="sell" >
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
-	  </form></div>
-	  <input type="submit" value="submit">
+	  <select class="form-control" name="aj" >
+		<option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+     </div>
+	  <button type="submit" class="button" data-toggle="modal" data-target= "#project1">Add to cart</button>
+     </form>	 <!-- <input type="submit" value="submit"></form> -->
 	 <!-- <button class="button" type="submit">Add to kcart</button> -->
 	 </th>
   </tr>
   </table>
-
 </div>
- <button class="button">Add to cart</button>
+  <center>
+
+  </center></div>
 <script>
+
 function openPage(pageName,elmnt,color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -223,10 +297,38 @@ function openPage(pageName,elmnt,color) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
     }
-    document.getElementById(pageName).style.display = "block";
+    document.getElementById(pageName).style.display = " block";
     elmnt.style.backgroundColor = color;
 
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-</script></div>{% endblock %}
+</script>
+
+<!-- Button trigger modal
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>-->
+
+<!-- Modal -->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" style="float:right"  data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+    </div>
+      <div class="modal-body">
+        Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in production. You can also download a sourcemap file for use when debugging with a compressed file. The map file is not required for users to run jQuery, it just improves the developer's debugger experience. As of jQuery 1.11.0/2.1.0 the //# sourceMappingURL comment is not included in the compressed file.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

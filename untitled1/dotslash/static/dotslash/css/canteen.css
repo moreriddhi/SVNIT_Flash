@@ -1,0 +1,97 @@
+*{
+    font-family: 'Lato', sans-serif;
+
+}
+.sec1{
+font-family: 'Lato', sans-serif;
+margin-top: 50px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+    margin: 20px;
+}
+
+.head_button{
+border:3px solid #4caf50;
+font-size: 1.5em;
+}
+.head_button:hover,
+.head_button:focus {
+  border:2px solid #595186;
+  color:whitesmoke;
+  background-position: right center;
+  -webkit-box-shadow: inset 17.5em 0 0 0 #7cd67f;
+          box-shadow: inset 17.5em 0 0 0 #7cd67f;
+}
+
+.top
+{
+position: fixed;
+  background-color: black;
+    height: 36px;
+    width: 1356px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    text: overline;
+    padding: 40px;
+
+}
+
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 140%;
+    margin: 0;
+    font-family: Arial;
+
+}
+
+/* Style tab links */
+.tablink {
+    background-color: white;
+    color: black;
+    float: left;
+    border: 10px;
+    outline: 10px;
+    cursor: pointer;
+    margin-left: 90px;
+    font-size: 37px;
+    width: 50%;
+}
+.tablink:hover {
+    background-color: #d0d3d8;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    padding:0px;
+    height: 100%;
+    margin: 2px;
+}
+
+#Home {background-color: white;}
+#News {background-color: white;}

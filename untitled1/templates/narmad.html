@@ -1,9 +1,107 @@
-{% include 'base.html' %}
+{% extends 'base.html' %}
 {% block title %}Registration{% endblock %}
-{% block body %}
+{% block body %}<style>
+.center-block{
+    padding-top: 150px;
+}
+</style>
+    <div class="container">
+            <div class="center-block ">
     <form class="rashmit form-horizontal" method="post" action="{% url 'dotslash:register' %}">
     {% csrf_token %}
-    {{ form.as_p }}
-        <button class="btn-primary" type="submit" value="Submit">Submit</button>
+        <fieldset>
+            <div class="control-group">
+            <!-- Username -->
+                <label class="control-label" for="username">FirstName:</label>
+                <div class="controls">
+                    {{ form.firstName }}
+                    <p class="help-block">Username can contain any letters, without spaces</p>
+                </div>
+            </div>
+            <div class="control-group">
+            <!-- Username -->
+                <label class="control-label" for="username">LastName:</label>
+                <div class="controls">
+                    {{ form.lastName }}
+                    <p class="help-block">Enter your lastname can contain any letters, without spaces</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+            <!-- Username -->
+                <label class="control-label" for="username">S.V.N.I.T Reg. number:</label>
+                <div class="controls">
+                    {{ form.rollno }}
+                    <p class="help-block">Enter your roll number.</p>
+                </div>
+            </div>
+
+
+            <div class="control-group">
+            <!-- Username -->
+                <label class="control-label" for="username">From-Date:</label>
+                <div class="controls">
+                    {{ form.fromdate }}
+                    <p class="help-block">Enter the date till you want accomodatation.</p>
+                </div>
+            </div>
+
+
+            <div class="control-group">
+            <!-- Username -->
+                <label class="control-label" for="username">To-Date:</label>
+                <div class="controls">
+                    {{ form.todate }}
+                    <p class="help-block">Enter the date from you want accomodatation.</p>
+                </div>
+            </div>
+            <div class="control-group">
+            <!-- Username -->
+                <label class="control-label" for="username">Number of Guests:</label>
+                <div class="controls">
+                    {{ form.noofmembers }}
+                    <p class="help-block">Enter the number of guest for you want accomodation.</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+            <!-- Username -->
+                <label class="control-label" for="username">Guest-Name:</label>
+                <div class="controls">
+                    {{ form.personname }}
+                    <p class="help-block">Enter Guest's name.</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+            <!-- Username -->
+                <label class="control-label" for="username">Guest-Age:</label>
+                <div class="controls">
+                    {{ form.personage }}
+                    <p class="help-block">Please  Enter your age.</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+            <!-- Username -->
+                <label class="control-label" for="username">Upload Any ID:</label>
+                <div class="controls">
+                    {{ form.id }}
+                    <p class="help-block">Upload any of the guest id in JPEG Format.</p>
+                </div>
+            </div>
+
+        <div class="control-group">
+            <!-- Button -->
+            <div class="controls">
+                <button class="btn btn-success">Register</button>
+            </div>
+        </div>
+        </fieldset>
     </form>
+    </div>
+    </div>
+
+
+
 {% endblock %}

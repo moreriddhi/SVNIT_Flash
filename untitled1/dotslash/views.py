@@ -24,8 +24,9 @@ def narmad(request):
     return render(request, 'narmad.html', context)
 
 def registration(request):
+    data = request.POST
     context = {
-
+        'data': data,
     }
     return render(request, 'reg_suc.html', context)
 
