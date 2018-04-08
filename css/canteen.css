@@ -10,16 +10,29 @@ margin-top: 50px;
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 2em;
     margin: 4px 2px;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
+    margin: 20px;
 }
 
+.head_button{
+border:3px solid #4caf50;
+font-size: 1.5em;
+}
+.head_button:hover,
+.head_button:focus {
+  border:2px solid #595186;
+  color:whitesmoke;
+  background-position: right center;
+  -webkit-box-shadow: inset 17.5em 0 0 0 #7cd67f;
+          box-shadow: inset 17.5em 0 0 0 #7cd67f;
+}
 
 .top
 {
@@ -63,13 +76,12 @@ body, html {
     border: 10px;
     outline: 10px;
     cursor: pointer;
-    padding: 14px 16px;
+    margin-left: 90px;
     font-size: 37px;
     width: 50%;
 }
-
 .tablink:hover {
-    background-color: #777;
+    background-color: #d0d3d8;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
