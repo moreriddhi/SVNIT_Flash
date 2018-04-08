@@ -1,0 +1,89 @@
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+#context{
+    h2><align ="left"> DOSA </align></H2>
+     <div class="form-group">
+      <label for="sel1">Quantity</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select></div>
+     <button class="button">Add to cart</button>
+}
+
+.top
+{
+position: fixed;
+  background-color: black;
+    height: 36px;
+    width: 1356px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    text: overline;
+    padding: 75px;
+}
+
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 140%;
+    margin: 0;
+    font-family: Arial;
+
+}
+
+/* Style tab links */
+.tablink {
+    background-color: white;
+    color: black;
+    float: left;
+    border: 10px;
+    outline: 10px;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 37px;
+    width: 50%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 40px;
+    height: 100%;
+
+}
+
+#Home {background-color: white;}
+#News {background-color: white;}
