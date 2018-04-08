@@ -1,65 +1,128 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html>
+<head>
 {% load static %}
-{% block title %}Council{% endblock %}
-{% block body %}
+     <meta chaRset="</utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'dotslash/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'dotslash/css/cards.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script type="text/javascript" src = "{% static 'dotslash/js/cards.js' %}"></script>
+    <title>SVNIT FLash</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dotslash/css/canteen.css' %}">
+	</head>
+<body>
+<div class="container-width">
+<div class="header navbar navbar-default navbar-fixed-top">
+  <div class="row text-center">
+      <div class="col-md-3 logo">
+              <img src="{% static 'dotslash/images/svnit logo.png' %}" align="right" class="img-responsive">
+      </div>
+      <div class="col-md-9 ">
+              <div class="row">
+              <div class="col-md-11"> <center><img class="head img-responsive" src="{% static 'dotslash/images/head.png' %}" alt="FLASH" ></center>
+              </div>
+              <div class="col-md-1 svnit"><h1 align="left">SVNIT</h1> </div>
+              </div>
+              <hr>
+              <div class="row">
+          <div class="col-md-3">
+               <a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt butt" href="{% url 'dotslash:home' %}" role="button">Home</a>
+
+          </div>
+          <div class="col-md-3">
+               <a onclick="window.open('#guest_house','_self')" class="btn btn-default buth butt" role="button" href="{% url 'dotslash:narmad' %}">Guest House Booking</a>
+
+          </div>
+          <div class="col-md-3">
+               <a onclick="window.open('#canteen','_self')" class="btn btn-default buth butt"  role="button" href="{% url 'dotslash:canteen' %}">Canteen Service</a>
+
+          </div>
+          <div class="col-md-3">
+               <a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt" href="{% url 'dotslash:council' %}" role="button">Students Council</a>
+
+          </div>
+        </div>
+  </div>
+
+  </div>
+</div>
+</div>
+<style>
+.container{
+    padding-top: 260px;
+}
+</style>
     <link rel="stylesheet" type="text/css" href="{% static 'dotslash/css/council.css' %}">
     <div class="container sections rashmit">
         <div class="row text-center">
-            <div class=" ">
+            <div class="col-md-4 ">
                 <img src="{% static "dotslash/images/person.png" %}" height="200" width="200">
-                <h6>Roll No - u12ch081, 
+                <h6>Roll No - u12ch081,
                     Branch - Chemical Engineering<br>
                     <a href="#" class="button">Email</a>
-     <!--<div id="loginScreen">
-        <a href="" class="cancel">&times;</a>
-    </div>--></h6>
-                <h3>Student General Secretary</h3></div>
-            <div class=" ">
-     <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
-      <h6>Roll No - u12ch081,
-     Branch - Chemical Engineering<br>
-     <u>Email</u></h6>
-     <h3>Academic Affair Secretary</h3></div></div>
-     <div class="row text-center">
-     <div class=" ">
-     <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
-      <h6>Roll No - u12ch081,
-    Branch - Chemical Engineering<br>
-     <u>Email</u></h6>
-     <h3>Cultural Secretary</h3></div>
-     <div class=" ">
-     <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
-      <h6>Roll No - u12ch081,
-     Branch - Chemical Engineering<br>
-     <u>Email</u></h6>
-         <h3>Co-curricular Affair Secretary</h3></div>
-     <div class="row text-center">
-     <div class=" ">
-     <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
-      <h6>Roll No - u12ch081,
-     Branch - Chemical Engineering<br>
-     <u>Email</u></h6>
-     <h3>Sports Secretary</h3></div>
-     <div class=" ">
-     <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
-      <h6>Roll No - u12ch081,
-     Branch - Chemical Engineering<br>
-     <u>Email</u></h6>
-    <h3> Hostel Affair Secretary</h3></div></div>
-     <div class="row text-center">
-     <div class=" ">
-     <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
-      <h6>Roll No - u12ch081,
-     Branch - Chemical Engineering<br>
-     <u>Email</u></h6>
-     <h3>Alumni Training and Placement Secretary</h3></div>
-     <div class=" ">
-     <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
-      <h6>Roll No - u12ch081,
-     Branch - Chemical Engineering<br>
-     <u>Email</u></h6>
-     <h3>Reasearch and Innovation Secretary</h3></div>
-    </div>
+                </h6>
+                <h3>Student General Secretary</h3>
+            </div>
+            <div class="col-md-4 ">
+                <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
+                <h6>Roll No - u12ch081,
+                Branch - Chemical Engineering<br>
+                <u>Email</u></h6>
+                <h3>Academic Affair Secretary</h3>
+            </div>
+         <div class="col-md-4 ">
+         <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
+          <h6>Roll No - u12ch081,
+        Branch - Chemical Engineering<br>
+         <u>Email</u></h6>
+             <h3>Cultural Secretary</h3></div></div>
+        <div class="row text-center">
+         <div class=" col-md-4">
+         <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
+          <h6>Roll No - u12ch081,
+         Branch - Chemical Engineering<br>
+         <u>Email</u></h6>
+             <h3>Co-curricular Affair Secretary</h3></div>
+
+         <div class="col-md-4 ">
+         <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
+          <h6>Roll No - u12ch081,
+         Branch - Chemical Engineering<br>
+         <u>Email</u></h6>
+         <h3>Sports Secretary</h3></div>
+         <div class=" col-md-4">
+         <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
+          <h6>Roll No - u12ch081,
+         Branch - Chemical Engineering<br>
+         <u>Email</u></h6>
+             <h3> Hostel Affair Secretary</h3></div></div>
+         <div class="row text-center">
+         <div class=" col-md-4">
+         <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
+          <h6>Roll No - u12ch081,
+         Branch - Chemical Engineering<br>
+         <u>Email</u></h6>
+         <h3>Alumni Training and Placement Secretary</h3></div>
+         <div class="col-md-4 ">
+         <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
+          <h6>Roll No - u12ch081,
+         Branch - Chemical Engineering<br>
+         <u>Email</u></h6>
+         <h3>Reasearch and Innovation Secretary</h3></div>
+
+        <div class=" col-md-4">
+         <img src="{% static "dotslash/images/person.png" %}"  height="200" width="200">
+          <h6>Roll No - u12ch081,
+         Branch - Chemical Engineering<br>
+         <u>Email</u></h6>
+         <h3>Reasearch and Innovation Secretary</h3></div>
+        </div></div>
  </div>
     </div>
-{% endblock %}
+</body></html>

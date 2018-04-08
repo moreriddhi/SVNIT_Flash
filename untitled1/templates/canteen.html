@@ -71,7 +71,7 @@
   <button class="tablink" onclick="openPage('Drinks', this, '#a9bed8')" >DRINKS</button></div>
   </div>
   <div id="Beverages" class="tabcontent">
-      <form method="post" action="cart.php" class="form">
+      <form method="post" action="{% url 'dotslash:cart' %}" class="form">
   <table>
 
      <tr>
@@ -207,7 +207,7 @@
   </tr>
   </table>
 
-</div>
+      </div>
 <div id="Drinks" class="tabcontent">
   <table>
    <tr>
@@ -275,15 +275,15 @@
         <option>4</option>
       </select>
      </div>
-	  <button type="submit" class="button" data-toggle="modal" data-target= "#project1">Add to cart</button>
-     </form>	 <!-- <input type="submit" value="submit"></form> -->
+	  	 <!-- <input type="submit" value="submit"></form> -->
 	 <!-- <button class="button" type="submit">Add to kcart</button> -->
 	 </th>
   </tr>
   </table>
 </div>
   <center>
-
+    <button type="submit" class="button" data-toggle="modal" data-target= "#project1">Add to cart</button>
+     </form>
   </center></div>
 <script>
 
@@ -311,24 +311,7 @@ document.getElementById("defaultOpen").click();
 </button>-->
 
 <!-- Modal -->
-<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
 
-      <div class="modal-header">
-        <button type="button" class="close" style="float:right"  data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-    </div>
-      <div class="modal-body">
-        Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in production. You can also download a sourcemap file for use when debugging with a compressed file. The map file is not required for users to run jQuery, it just improves the developer's debugger experience. As of jQuery 1.11.0/2.1.0 the //# sourceMappingURL comment is not included in the compressed file.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 </body>
 </html>

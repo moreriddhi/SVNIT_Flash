@@ -115,13 +115,15 @@ margin:0;
   font-family: 'Lato', sans-serif;
 
  }
-
+.navvy{
+    margin-top: 30px;
+}
 .button_front:hover,
 .button_front:focus {
   border:2px solid #595186;
   color:whitesmoke;
   background-position: right center;
-  -webkit-box-shadow: inset 17.5em 0 0 0 #a9bed8;
+  -webkit-box-shadow: inset .5em 0 0 0 #a9bed8;
           box-shadow: inset 17.5em 0 0 0 #a9bed8;
 }
 

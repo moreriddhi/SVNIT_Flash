@@ -1,10 +1,66 @@
-{% extends 'base.html' %}
-{% block title %}Registration{% endblock %}
-{% block body %}<style>
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html>
+<head>
+{% load static %}
+     <meta chaRset="</utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'dotslash/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'dotslash/css/cards.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script type="text/javascript" src = "{% static 'dotslash/js/cards.js' %}"></script>
+    <title>SVNIT FLash</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dotslash/css/canteen.css' %}">
+	</head>
+<body>
+<div class="container-width">
+<div class="header navbar navbar-default navbar-fixed-top">
+  <div class="row text-center">
+      <div class="col-md-3 logo">
+              <img src="{% static 'dotslash/images/svnit logo.png' %}" align="right" class="img-responsive">
+      </div>
+      <div class="col-md-9 ">
+              <div class="row">
+              <div class="col-md-11"> <center><img class="head img-responsive" src="{% static 'dotslash/images/head.png' %}" alt="FLASH" ></center>
+              </div>
+              <div class="col-md-1 svnit"><h1 align="left">SVNIT</h1> </div>
+              </div>
+              <hr>
+              <div class="row">
+          <div class="col-md-3">
+               <a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt butt" href="{% url 'dotslash:home' %}" role="button">Home</a>
+
+          </div>
+          <div class="col-md-3">
+               <a onclick="window.open('#guest_house','_self')" class="btn btn-default buth butt" role="button" href="{% url 'dotslash:narmad' %}">Guest House Booking</a>
+
+          </div>
+          <div class="col-md-3">
+               <a onclick="window.open('#canteen','_self')" class="btn btn-default buth butt"  role="button" href="{% url 'dotslash:canteen' %}">Canteen Service</a>
+
+          </div>
+          <div class="col-md-3">
+               <a onclick="window.open('#sixth','_self')" class="btn btn-default buth butt" href="{% url 'dotslash:council' %}" role="button">Students Council</a>
+
+          </div>
+        </div>
+  </div>
+
+  </div>
+</div>
+</div>
+<style>
 .center-block{
-    padding-top: 150px;
+    padding-top: 250px;
 }
 </style>
+    <link rel="stylesheet" type="text/css" href="{% static 'dotslash/css/narmad.css' %}">
+
+
     <div class="container">
             <div class="center-block ">
     <form class="rashmit form-horizontal" method="post" action="{% url 'dotslash:register' %}">
@@ -94,14 +150,13 @@
         <div class="control-group">
             <!-- Button -->
             <div class="controls">
-                <button class="btn btn-success">Register</button>
+                <center><button class="butt button_front navvy">Register</button></center>
             </div>
         </div>
         </fieldset>
     </form>
     </div>
     </div>
+</body></html>
 
 
-
-{% endblock %}

@@ -1,6 +1,12 @@
 {% include 'base.html' %}
 {% block title %}Registration{% endblock %}
-{% block body %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+{% block body %}<style>
+.rashmit {
+    padding-top: 199px;
+}
+</style>
     <div class="rashmit">
     <script type="text/javascript">
         function randomnumber() {
@@ -8,7 +14,7 @@
         }
         onload=randomnumber
     </script>
-        <div class="alert alert-success fade in">
+        <div class="alert alert-success fade in display-4">
             <a href="#" class="close" data-dismiss="alert">&times;</a>
             <strong>Success!</strong> Your registration has been done successfully.
         </div>
@@ -19,5 +25,6 @@
        <form action="">
         <input name="randomnumber" readonly>
     </form>
+    <p class="display-4"> <a href="{% url 'dotslash:home' %}">Back</a></p>
     </div>
 {% endblock %}
